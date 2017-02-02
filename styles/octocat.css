@@ -3,12 +3,61 @@
 ||||||||||||||*/
  body {
    margin: 0;
+   /*background: red;*/
  }
+
+ img {
+   max-width: 100%;
+ }
+
+
 
  /*|||||||||||||
  -Global Styles-
 ||||||||||||||*/
+main {
+  /*background: green;*/
+}
 
 .container {
+  /*background: blue;*/
   max-width: 65rem;
+  margin: 0 auto;
+}
+
+
+
+/*|||||||||||||
+-Grid Styles-
+||||||||||||||*/
+.grid {
+  overflow: auto;
+}
+
+
+
+/*|||||||||||||
+-Grid Item Styles-
+||||||||||||||*/
+.grid__item {
+  float: left;
+  margin: 1rem;
+  width: calc(100% / 3 - 1rem - 1rem);
+}
+
+.item-image {
+  border: 0.1rem solid #e3e3e3;
+  border-radius: .25rem;
+}
+
+.item-info {
+  overflow: auto;
+}
+
+.item-info__left {
+  float: left;
+}
+
+.item-info__right {
+  float: right;
 }
