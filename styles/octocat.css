@@ -43,6 +43,7 @@ main {
   float: left;
   margin: 1rem;
   width: calc(100% / 3 - 1rem - 1rem);
+  min-width: 15rem;
 }
 
 .item-image {
@@ -52,6 +53,8 @@ main {
 
 .item-info {
   overflow: auto;
+
+  border-bottom: thin solid #e3e3e3;
 }
 
 .item-info__left {
@@ -60,4 +63,18 @@ main {
 
 .item-info__right {
   float: right;
+}
+
+.item-info__name {
+  float: left;
+  margin-right: .5rem;
+}
+
+.item-info__creator-pic {
+  width: 2rem;
+  height: 2rem;
+  margin: .5rem 0;
+  padding: 0;
+
+  border-radius: 10%;
 }
