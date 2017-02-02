@@ -4,6 +4,10 @@
  body {
    margin: 0;
    /*background: red;*/
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+   font-size: .75rem;
+   color: #ada69c;
  }
 
  img {
@@ -43,7 +47,7 @@ main {
   float: left;
   margin: 1rem;
   width: calc(100% / 3 - 1rem - 1rem);
-  min-width: 15rem;
+  min-width: 17rem; /* arrived at this number by trial and error */
 }
 
 .item-image {
@@ -59,22 +63,28 @@ main {
 
 .item-info__left {
   float: left;
+  margin: 1rem 0;
 }
 
 .item-info__right {
   float: right;
+  margin: .5rem 0;
 }
 
 .item-info__name {
   float: left;
-  margin-right: .5rem;
+  margin: .5rem .5rem .5rem 0;
 }
 
 .item-info__creator-pic {
-  width: 2rem;
-  height: 2rem;
-  margin: .5rem 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin:  .25rem 0; /* img height set to 2x font-size so theoretically setting the margin top/bottom to half the size of text   margin top/bottom will make them aligned vertically?*/
   padding: 0;
 
   border-radius: 10%;
+}
+
+.cat-name {
+  color: #1f1e1e;
 }
